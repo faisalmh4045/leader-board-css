@@ -2,6 +2,7 @@
 body {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    margin: 0;
     background-color: #f3f1ff;
 }
 main {
@@ -25,6 +26,40 @@ main {
 hr {
     border: 1px solid #d1d1d1;
     margin-bottom: 30px;
+}
+
+/* navbar section styles */
+header {
+    background-color: #562eff;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 870px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+}
+.logo span {
+    font-size: 24px;
+    margin-left: 10px;
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
 }
 
 /* top writers styles */

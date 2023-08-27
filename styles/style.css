@@ -1,0 +1,125 @@
+/* common styles */
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #f3f1ff;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    background-color: #ffffff;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.section-title {
+    color: #562eff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 30px;
+}
+
+/* top writers styles */
+.top-writers {
+    margin-bottom: 30px;
+}
+.writers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+}
+.writer {
+    display: flex;
+    align-items: center;
+}
+.writer img {
+    height: 56px;
+    width: 56px;
+}
+.writer-name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* top blogs styles */
+.blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.blog {
+    display: flex;
+    align-items: center;
+}
+.blog .tumbnail img {
+    width: 177px;
+}
+.blog-info {
+    margin-left: 15px;
+}
+.blog-info .blog-title {
+    font-size: 18px;
+}
+.blog-info .blog-author {
+    color: #9f9f9f;
+}
+.blog-info .blog-author a {
+    text-decoration: none;
+    color: #562eff;
+}
+
+/* latest course styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+}
+.course {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+.course-banner img {
+    width: 250px;
+}
+.course-details .course-title {
+    font-size: 18px;
+}
+.course-details .course-author {
+    color: #ed6b4f;
+}
+.course-details .course-info {
+    display: flex;
+    justify-content: space-between;
+}
+.rating {
+    font-size: 12px;
+}
+.rating .fa-star.filled {
+    color: #ffc014;
+}
+.rating .fa-star.empty {
+    color: #ebebeb;
+}
+.rating span {
+    color: #a2a2a2;
+}
+.course-duration {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff4a60;
+    background-color: #ffe4e8;
+    padding: 3px 5px;
+    border-radius: 15px;
+}

@@ -132,7 +132,7 @@ nav li {
     border-radius: 15px;
 }
 .course-banner img {
-    width: 250px;
+    width: 100%;
 }
 .course-details .course-title {
     font-size: 18px;
@@ -204,9 +204,6 @@ nav li {
     /* courses section */
     .courses {
         row-gap: 20px;
-    }
-    .course-banner img {
-        width: 100%;
     }
     .rating {
         font-size: 14px;

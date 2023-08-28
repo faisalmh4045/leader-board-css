@@ -1,6 +1,8 @@
 /* common styles */
-body {
+* {
     box-sizing: border-box;
+}
+body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     background-color: #f3f1ff;
@@ -34,6 +36,10 @@ header {
     color: #fff;
     padding: 15px;
     margin-bottom: 30px;
+}
+.menu-icon {
+    font-size: 24px;
+    display: none;
 }
 .navbar-section {
     display: flex;
@@ -157,4 +163,52 @@ nav li {
     background-color: #ffe4e8;
     padding: 3px 5px;
     border-radius: 15px;
+}
+
+/* media queries */
+@media (max-width: 576px) {
+    /* common styles */
+    .container {
+        width: 90%;
+    }
+    .writers,
+    .blogs,
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+    /* nav section */
+    .navbar-section {
+        align-items: center;
+        width: 100%;
+    }
+    .menu-icon {
+        display: inline-block;
+    }
+    .info nav{
+        display: none;
+    }
+    
+    /* blogs secton */
+    .blog {
+        flex-direction: column;
+        align-items: start;
+    }
+    .blog .tumbnail img {
+        width: 100%;
+    }
+    .blog-info {
+        margin-left: 0;
+    }
+
+    /* courses section */
+    .courses {
+        row-gap: 20px;
+    }
+    .course-banner img {
+        width: 100%;
+    }
+    .rating {
+        font-size: 14px;
+    }
 }
